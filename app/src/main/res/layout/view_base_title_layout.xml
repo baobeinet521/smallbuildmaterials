@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/margin_55"
+    android:background="@color/background_light">
+
+    <Button
+        android:id="@+id/title_left_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:textSize="@dimen/font_15"
+        android:drawablePadding="@dimen/margin_3"
+        android:background="@color/transparent"
+        android:drawableLeft="@mipmap/ico_btn_back"/>
+    
+    <Button
+        android:id="@+id/title_middle_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/font_16"
+        android:textColor="@color/global_balck"/>
+
+    <Button
+        android:id="@+id/title_right_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:layout_marginRight="@dimen/margin_15"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:drawableLeft="@mipmap/ico_settings"
+        android:drawablePadding="@dimen/margin_3"
+        android:textSize="@dimen/font_16"
+        android:textColor="@color/global_balck"/>
+
+</RelativeLayout>
