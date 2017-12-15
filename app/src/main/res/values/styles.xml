@@ -8,4 +8,9 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="mytitlestyle" parent="android:Theme">
+        <item name="android:windowTitleSize">@dimen/margin_55</item>
+        <item name="android:windowTitleBackgroundStyle">@null</item>
+    </style>
+
 </resources>

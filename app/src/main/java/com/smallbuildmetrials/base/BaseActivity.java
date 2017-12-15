@@ -43,13 +43,12 @@ public abstract class BaseActivity extends FragmentActivity implements IBaseInit
         }else{
             requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
         }
+
         if (isDefaultContentview()) {
             setContentView(getContentViewId());
         }else {
             super.setContentView(getContentViewId());
         }
-        setContentView(R.layout.activity_base_layout);
-        mLayoutInflater = LayoutInflater.from(this);
         initView();
         initListener();
         initData();
@@ -60,8 +59,9 @@ public abstract class BaseActivity extends FragmentActivity implements IBaseInit
     public void setContentView(int layoutResID) {
        View view = null;
        if(getContentViewId() != 0){
+           mLayoutInflater = LayoutInflater.from(this);
            view = mLayoutInflater.inflate(getContentViewId(),null);
-           initBaseView(view);
+           setContentView(view);
        }
     }
 
