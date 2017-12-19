@@ -1,32 +1,23 @@
 package smallbuildmetrials.ui;
 
+import android.os.Bundle;
+import android.support.annotation.Nullable;
+
 import com.smallbuildmetrials.R;
+
+import smallbuildmetrials.base.BasePresentAvtivity;
 import smallbuildmetrials.base.BaseTitleActivity;
 
 /**
  * Created by zhengdan on 2017/12/15.
  */
 
-public class MainActivity extends BaseTitleActivity {
-    @Override
-    public void initView() {
-        initTitle("首页");
-
-    }
+public class MainActivity extends BasePresentAvtivity {
 
     @Override
-    public void initData() {
-
-    }
-
-    @Override
-    public void initListener() {
-
-    }
-
-    @Override
-    public int getContentViewId() {
-        return R.layout.activity_main;
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
     }
 
     @Override

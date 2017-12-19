@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background_white">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        />
+    <FrameLayout
+        android:id="@+id/main_content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_bottom_view">
 
-</LinearLayout>
+    </FrameLayout>
+
+    
+    <com.flyco.tablayout.CommonTabLayout
+        android:id="@+id/main_bottom_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_55"
+        android:layout_alignParentBottom="true">
+
+    </com.flyco.tablayout.CommonTabLayout>
+</RelativeLayout>
