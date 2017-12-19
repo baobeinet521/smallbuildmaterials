@@ -37,11 +37,6 @@ public abstract class BaseTitleActivity extends BasePresentAvtivity implements I
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if(isNeedTitle()){
-            requestWindowFeature(Window.FEATURE_NO_TITLE);
-        }else{
-            requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
-        }
 
         if (isDefaultContentview()) {
             setContentView(getContentViewId());
@@ -200,9 +195,5 @@ public abstract class BaseTitleActivity extends BasePresentAvtivity implements I
     @Override
     protected void onDestroy() {
         super.onDestroy();
-    }
-
-    public boolean isNeedTitle(){
-        return true;
     }
 }

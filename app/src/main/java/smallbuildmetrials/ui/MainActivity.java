@@ -6,7 +6,6 @@ import android.support.annotation.Nullable;
 import com.smallbuildmetrials.R;
 
 import smallbuildmetrials.base.BasePresentAvtivity;
-import smallbuildmetrials.base.BaseTitleActivity;
 
 /**
  * Created by zhengdan on 2017/12/15.
