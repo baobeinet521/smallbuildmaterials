@@ -1,4 +1,4 @@
-package com.smallbuildmetrials.base.interfce;
+package smallbuildmetrials.interfce;
 
 /**
  * Created by zhengdan on 2017/12/7.

@@ -1,4 +1,4 @@
-package com.smallbuildmetrials.base.util;
+package smallbuildmetrials.util;
 
 /**
  * Created by zhengdan on 2017/12/8.

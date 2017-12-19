@@ -1,13 +1,13 @@
-package com.smallbuildmetrials.base.ui;
+package smallbuildmetrials.ui;
 
 import com.smallbuildmetrials.R;
-import com.smallbuildmetrials.base.BaseActivity;
+import smallbuildmetrials.base.BaseTitleActivity;
 
 /**
  * Created by zhengdan on 2017/12/15.
  */
 
-public class Mainactivity extends BaseActivity{
+public class MainActivity extends BaseTitleActivity {
     @Override
     public void initView() {
         initTitle("首页");

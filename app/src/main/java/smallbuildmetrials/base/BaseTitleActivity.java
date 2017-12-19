@@ -1,9 +1,8 @@
-package com.smallbuildmetrials.base;
+package smallbuildmetrials.base;
 
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
@@ -12,14 +11,14 @@ import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 
 import com.smallbuildmetrials.R;
-import com.smallbuildmetrials.base.interfce.IBaseInitInterface;
-import com.smallbuildmetrials.base.util.TextUtil;
+import smallbuildmetrials.interfce.IBaseInitInterface;
+import smallbuildmetrials.util.TextUtil;
 
 /**
  * Created by zhengdan on 2017/12/7.
  */
 
-public abstract class BaseActivity extends FragmentActivity implements IBaseInitInterface {
+public abstract class BaseTitleActivity extends BasePresentAvtivity implements IBaseInitInterface {
 
     private View mTitleView;
     private LayoutInflater mLayoutInflater;
